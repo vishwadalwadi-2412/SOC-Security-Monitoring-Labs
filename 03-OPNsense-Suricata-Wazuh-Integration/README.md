@@ -36,3 +36,50 @@ OPNsense Suricata logs the ICMP test and YouTube TLS SNI events, applies the con
 
 ## Conclusion
 In this practical, OPNsense was configured with the Suricata Intrusion Detection System to monitor network traffic using custom detection rules. A custom ICMP rule was initially used to verify traffic monitoring, followed by a rule to detect access attempts to YouTube based on the TLS Server Name Indication (SNI). The generated Suricata alerts were successfully observed in the OPNsense Intrusion Detection logs. OPNsense was then integrated with Wazuh by configuring remote syslog forwarding and installing the Wazuh agent plugin to enable centralized log collection. Finally, the generated Suricata alerts were successfully ingested into the Wazuh Threat Hunting dashboard.
+
+## Screenshots
+
+### 25-virtualbox-opnsense-vm-and-login
+![](images/25-virtualbox-opnsense-vm-and-login.png)
+
+### 26-opnsense-ids-administration-settings
+![](images/26-opnsense-ids-administration-settings.png)
+
+### 27-opnsense-console-custom-suricata-rule
+![](images/27-opnsense-console-custom-suricata-rule.png)
+
+### 28-opnsense-ids-log-icmp-ping-detected
+![](images/28-opnsense-ids-log-icmp-ping-detected.png)
+
+### 29-opnsense-ids-log-youtube-access-detected
+![](images/29-opnsense-ids-log-youtube-access-detected.png)
+
+### 30-opnsense-ids-log-and-youtube-privacy-error
+![](images/30-opnsense-ids-log-and-youtube-privacy-error.png)
+
+### 31-youtube-browse-and-opnsense-ids-log
+![](images/31-youtube-browse-and-opnsense-ids-log.jpg)
+
+### 32-youtube-offline-and-opnsense-ids-drop-log
+![](images/32-youtube-offline-and-opnsense-ids-drop-log.png)
+
+### 33-ossec-conf-remote-syslog-and-opnsense-destination
+![](images/33-ossec-conf-remote-syslog-and-opnsense-destination.png)
+
+### 34-opnsense-firewall-rules
+![](images/34-opnsense-firewall-rules.png)
+
+### 35-opnsense-plugins-os-wazuh-agent
+![](images/35-opnsense-plugins-os-wazuh-agent.jpg)
+
+### 36-opnsense-wazuh-agent-settings
+![](images/36-opnsense-wazuh-agent-settings.png)
+
+### 37-opnsense-ids-rules-youtube-rules
+![](images/37-opnsense-ids-rules-youtube-rules.png)
+
+### 38-threat-hunting-opnsense-youtube-alert
+![](images/38-threat-hunting-opnsense-youtube-alert.png)
+
+### 39-threat-hunting-opnsense-youtube-blocked
+![](images/39-threat-hunting-opnsense-youtube-blocked.jpg)
