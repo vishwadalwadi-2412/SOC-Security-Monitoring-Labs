@@ -40,3 +40,59 @@ A Sysmon DNS query event is collected by Wazuh, processed through the DNS statis
 
 ## Conclusion
 In this practical, Wazuh was integrated with AlienVault OTX for threat intelligence and IoC detection. Sysmon was configured on the Windows VM to generate DNS Query Event ID 22, which was collected by the Wazuh agent. The required DNS statistics, integration, rule, and Active Response components were configured on the Wazuh server. PowerShell and the OTX script were configured on Windows to query AlienVault OTX for detected domains. A test DNS query was generated and its Sysmon event was verified. The OTX response was recorded in the active-response log, and the AlienVault OTX - Indicator(s) Found alert was successfully generated in the Wazuh Dashboard.
+
+## Screenshots
+
+### 48-win10-otx-agent-connected-and-services
+![](images/48-win10-otx-agent-connected-and-services.jpg)
+
+### 49-sysmon-install-powershell
+![](images/49-sysmon-install-powershell.jpg)
+
+### 50-ossec-conf-sysmon-and-manager-ossec-conf
+![](images/50-ossec-conf-sysmon-and-manager-ossec-conf.png)
+
+### 51-git-clone-wazuh-domain-stats-alienvault
+![](images/51-git-clone-wazuh-domain-stats-alienvault.png)
+
+### 52-git-checkout-domain-stats-release
+![](images/52-git-checkout-domain-stats-release.png)
+
+### 53-pip-install-flask-and-whois
+![](images/53-pip-install-flask-and-whois.png)
+
+### 54-dnsstats-api-py-code-part-1
+![](images/54-dnsstats-api-py-code-part-1.png)
+
+### 55-dnsstats-api-py-code-part-2
+![](images/55-dnsstats-api-py-code-part-2.png)
+
+### 56-ossec-conf-integration-and-rule-100015
+![](images/56-ossec-conf-integration-and-rule-100015.png)
+
+### 57-otx-ps1-download-via-http-server
+![](images/57-otx-ps1-download-via-http-server.png)
+
+### 58-active-response-folder-otx-files
+![](images/58-active-response-folder-otx-files.jpg)
+
+### 59-otx-ps1-script-and-otx-api-page
+![](images/59-otx-ps1-script-and-otx-api-page.jpg)
+
+### 60-ossec-conf-active-response-alienvault-otx
+![](images/60-ossec-conf-active-response-alienvault-otx.png)
+
+### 61-custom-dnsstats-py-script
+![](images/61-custom-dnsstats-py-script.jpg)
+
+### 62-alienvault-otx-rules-xml
+![](images/62-alienvault-otx-rules-xml.png)
+
+### 63-otx-active-responses-log
+![](images/63-otx-active-responses-log.jpg)
+
+### 64-flushdns-and-sysmon-event-22
+![](images/64-flushdns-and-sysmon-event-22.png)
+
+### 65-threat-hunting-alienvault-otx-rule-100815
+![](images/65-threat-hunting-alienvault-otx-rule-100815.png)
