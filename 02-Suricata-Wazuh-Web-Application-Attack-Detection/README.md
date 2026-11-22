@@ -36,3 +36,35 @@ Suricata detects the custom DVWA payload and SQL Injection traffic, records the 
 
 ## Conclusion
 In this practical, Suricata IDS was successfully integrated with Wazuh to enable centralized monitoring and detection of network-based web application attacks. Custom Suricata rules were configured to detect both a specific DVWA payload and SQL Injection attack patterns, while the Wazuh agent was configured to monitor the generated eve.json logs. The Suricata engine inspected live network traffic and produced alerts whenever the defined signatures were matched. These alerts were successfully forwarded to Wazuh and visualized through the Threat Hunting dashboard.
+
+## Screenshots
+
+### 15-suricata-and-npcap-download-pages
+![](images/15-suricata-and-npcap-download-pages.png)
+
+### 16-suricata-rules-folder-and-local-rules
+![](images/16-suricata-rules-folder-and-local-rules.png)
+
+### 17-ossec-agent-folder-and-ossec-conf-eve-json
+![](images/17-ossec-agent-folder-and-ossec-conf-eve-json.jpg)
+
+### 18-suricata-folder-and-suricata-yaml
+![](images/18-suricata-folder-and-suricata-yaml.jpg)
+
+### 19-suricata-run-in-powershell
+![](images/19-suricata-run-in-powershell.png)
+
+### 20-curl-dvwa-attack-and-suricata-fast-log
+![](images/20-curl-dvwa-attack-and-suricata-fast-log.jpg)
+
+### 21-threat-hunting-suricata-raw-payload-alert
+![](images/21-threat-hunting-suricata-raw-payload-alert.png)
+
+### 22-suricata-sqli-custom-rule-and-engine-start
+![](images/22-suricata-sqli-custom-rule-and-engine-start.png)
+
+### 23-dvwa-sql-injection-and-suricata-fast-log
+![](images/23-dvwa-sql-injection-and-suricata-fast-log.jpg) 
+
+### 24-threat-hunting-suricata-sql-injection-alerts
+![](images/24-threat-hunting-suricata-sql-injection-alerts.png)
