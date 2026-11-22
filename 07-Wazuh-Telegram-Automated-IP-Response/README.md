@@ -35,3 +35,41 @@ A Wazuh brute-force alert is delivered to Telegram with analyst action buttons. 
 
 ## Conclusion
 In this practical, Wazuh was integrated with a Telegram bot to provide automated alert notification and response capabilities. A DVWA brute-force event triggered rule 100061, and the alert was forwarded to Telegram with Block IP and Unblock IP options. The Telegram listener processed the selected action and remotely created or removed Windows Firewall rules for the source IP. The blocking action prevented access to DVWA, while the unblock action restored connectivity. Finally, block and unblock activities were logged through syslog and monitored in Wazuh using rules 100062 and 100063, completing the automated detection, response, and monitoring cycle.
+
+## Screenshots
+
+### 77-ossec-conf-integrations-thehive-telegram-2
+![](images/77-ossec-conf-integrations-thehive-telegram-2.png)
+
+### 78-custom-telegram-script-block-unblock-buttons
+![](images/78-custom-telegram-script-block-unblock-buttons.png)
+
+### 79-telegram-listener-py-part-1
+![](images/79-telegram-listener-py-part-1.png)
+
+### 80-telegram-listener-py-part-2
+![](images/80-telegram-listener-py-part-2.png)
+
+### 81-telegram-listener-systemd-service
+![](images/81-telegram-listener-systemd-service.png)
+
+### 83-dvwa-and-threat-hunting-brute-force-alert
+![](images/83-dvwa-and-threat-hunting-brute-force-alert.jpg)
+
+### 84-threat-hunting-and-telegram-block-buttons
+![](images/84-threat-hunting-and-telegram-block-buttons.jpg)
+
+### 85-telegram-listener-running-and-ip-blocked
+![](images/85-telegram-listener-running-and-ip-blocked.png)
+
+### 86-edge-cannot-reach-dvwa-and-telegram-unblock
+![](images/86-edge-cannot-reach-dvwa-and-telegram-unblock.jpg)
+
+### 87-dvwa-reachable-and-telegram-unblocked
+![](images/87-dvwa-reachable-and-telegram-unblocked.jpg)
+
+### 88-ossec-conf-and-local-rules-100062-100063
+![](images/88-ossec-conf-and-local-rules-100062-100063.png)
+
+### 89-threat-hunting-soc-analyst-blocked-ip
+![](images/89-threat-hunting-soc-analyst-blocked-ip.png) 
