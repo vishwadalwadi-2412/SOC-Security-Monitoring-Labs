@@ -31,3 +31,39 @@ A DVWA brute-force alert matching rule `100061` is forwarded to TheHive and Tele
 
 ## Conclusion
 Wazuh was successfully integrated with TheHive, Telegram, and Gmail for automated security alert notification. A custom Telegram integration was configured using a BotFather-generated bot token and chat ID, and its communication was verified successfully. Wazuh rule 100061 was used to detect repeated failed DVWA login attempts and forward the resulting alert to TheHive and Telegram. Gmail SMTP was then configured in TheHive, followed by the creation of an email notification for security events. A second DVWA brute-force simulation successfully triggered the rule and generated notifications. The alert details were consequently reflected in TheHive, Telegram, and Gmail, demonstrating multi-channel security alerting and incident notification.
+
+## Screenshots
+
+### 66-telegram-botfather-and-getupdates-empty
+![](images/66-telegram-botfather-and-getupdates-empty.jpg)
+
+### 67-telegram-getupdates-chat-id.png
+![](images/67-telegram-getupdates-chat-id.png)
+
+### 68-custom-telegram-integration-script
+![](images/68-custom-telegram-integration-script.png)
+
+### 69-telegram-wazuh-alert-and-integration-test
+![](images/69-telegram-wazuh-alert-and-integration-test.png)
+
+### 70-ossec-conf-integration-custom-thehive-telegram
+![](images/70-ossec-conf-integration-custom-thehive-telegram.png)
+
+### 71-dvwa-login-and-threat-hunting-alerts
+![](images/71-dvwa-login-and-threat-hunting-alerts.jpg)
+
+### 72-thehive-alert-details-and-telegram-alert
+![](images/72-thehive-alert-details-and-telegram-alert.jpg)
+
+### 73-thehive-smtp-config-and-gmail-test
+![](images/73-thehive-smtp-config-and-gmail-test.jpg)
+
+### 74-thehive-email-notification-template
+![](images/74-thehive-email-notification-template.jpg)
+
+### 75-dvwa-login-failed-and-threat-hunting-rule-100061
+![](images/75-dvwa-login-failed-and-threat-hunting-rule-100061.jpg)
+
+### 76-thehive-alerts-and-gmail-alert-email
+![](images/76-thehive-alerts-and-gmail-alert-email.jpg)
+
