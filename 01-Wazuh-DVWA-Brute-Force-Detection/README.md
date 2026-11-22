@@ -32,3 +32,22 @@ Wazuh collects the DVWA Apache access logs, identifies repeated failed login att
 
 ## Conclusion
 In this practical, Wazuh was configured to monitor web application activity and detect brute-force login attempts using custom correlation rules. By integrating DVWA with Wazuh, collecting Apache access logs, and creating visual dashboards, the security events were successfully detected, analyzed, and presented in an organized manner.
+
+## Screenshots
+
+### 00-virtualbox-wazuh-server-and-wazuh-login
+<img width="1253" height="705" alt="00-virtualbox-wazuh-server-and-wazuh-login" src="https://github.com/user-attachments/assets/a976cf05-d57c-436c-b0ad-20520322b646" />
+### 01-wazuh-overview-dashboard
+### 02-wazuh-deploy-new-agent-windows
+### 03-wazuh-agent-optional-settings-and-service-start
+### 04-wazuh-threat-hunting-dashboard
+### 05-xampp-control-panel-and-dvwa-login
+### 06-xampp-apache-logs-and-ossec-conf-localfile
+### 07-wazuh-rules-files-list
+### 08-local-rules-xml-rule-100060-100061
+### 09-wazuh-ruleset-test-login-log
+### 10-dvwa-login-failed-and-alert-rule-100061
+### 11-wazuh-create-first-visualization
+### 12-visualization-edit-filter-rule-id-100061
+### 13-wazuh-visualizations-list
+### 14-dvwa-security-monitoring-dashboard
