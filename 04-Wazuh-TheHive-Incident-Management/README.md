@@ -32,3 +32,29 @@ The custom integration accepts a test alert with an HTTP 201 response, and a DVW
 
 ## Conclusion
 TheHive was successfully deployed using Docker with persistent data and log storage. A dedicated soc@thehive.local user and API key were configured for Wazuh integration. A custom Python script was created on the Wazuh server to send Wazuh alerts to TheHive through its API. The integration was first tested using a mock JSON alert and successfully returned STATUS: 201, confirming alert creation. The DVWA login activity was then used to trigger Wazuh rule 100061 for repeated failed login attempts. Finally, the generated Wazuh alert was automatically received and displayed as an alert/ticket in TheHive.
+
+## Screenshots
+
+### 40-thehive-folder-and-docker-compose-yml
+![](images/40-thehive-folder-and-docker-compose-yml.jpg)
+
+### 41-thehive-docker-compose-up
+![](images/41-thehive-docker-compose-up.png)
+
+### 42-thehive-organisation-list
+![](images/42-thehive-organisation-list.png)
+
+### 43-thehive-account-settings
+![](images/43-thehive-account-settings.png)
+
+### 44-custom-thehive-integration-script
+![](images/44-custom-thehive-integration-script.png)
+
+### 45-test-alert-json-rule-100061
+![](images/45-test-alert-json-rule-100061.png)
+
+### 46-dvwa-login-and-thehive-api-test-response
+![](images/46-dvwa-login-and-thehive-api-test-response.jpg)
+
+### 47-threat-hunting-100061-and-thehive-alerts
+![](images/47-threat-hunting-100061-and-thehive-alerts.png)
